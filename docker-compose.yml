@@ -1,0 +1,11 @@
+#version: '3.8'
+services:
+  mapper:
+    build: .
+    ports:
+      - "8052:8052"
+      - "8501:8501"
+    environment:
+      SERVICE_LAYER_URL: "https://win-2p3p2clhj7s:50000/b1s/v1"
+      SERVICE_LAYER_USER: "manager"
+      SERVICE_LAYER_PASS: "Pd121186A."
